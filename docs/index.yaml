@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  gateway-api-crds:
+  - apiVersion: v2
+    appVersion: 1.5.1
+    created: "2026-05-22T09:49:54.269311675+08:00"
+    description: A Helm chart to manage Kubernetes Gateway API CRDs
+    digest: 1a9a43c8951981deb427fd41f0804578a52aec473b69cbdb8da4f28183fc96cd
+    name: gateway-api-crds
+    type: application
+    urls:
+    - https://peterweissdk.github.io/helm/gateway-api-crds-1.5.1.tgz
+    version: 1.5.1
+generated: "2026-05-22T09:49:54.25994893+08:00"
