@@ -1,5 +1,8 @@
 # 💾 Helm Charts Repository
 
+[![Static Badge](https://img.shields.io/badge/Helm-Chart-white?style=flat&logo=helm&logoColor=white&logoSize=auto&labelColor=black)](https://helm.sh/)
+[![Static Badge](https://img.shields.io/badge/Kubernetes-CRDs-white?style=flat&logo=kubernetes&logoColor=white&logoSize=auto&labelColor=black)](https://kubernetes.io/)
+
 A Helm chart repository for Kubernetes resources, currently hosting the Gateway API CRDs chart.
 
 ## 🚀 Quick Start
