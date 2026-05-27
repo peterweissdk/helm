@@ -36,13 +36,26 @@ helm install gateway-api-crds peterweissdk/gateway-api-crds -f values.yaml
 ```
 helm/
 ├── charts/
-│   └── gateway-api-crds/      # Gateway API CRDs Helm chart
-│       ├── Chart.yaml         # Chart metadata
-│       ├── templates/         # Kubernetes manifests
-│       │   └── crds.yaml      # Gateway API CRD definitions
-│       └── values.yaml        # Default configuration values
-├── docs/                      # Helm repository index and packages
-│   ├── index.yaml             # Repository index
-│   └── *.tgz                  # Packaged charts
-└── LICENSE                    # GPL-3.0 License
+│   └── gateway-api-crds/
+│       ├── Chart.yaml
+│       ├── templates/
+│       │   └── crds.yaml
+│       └── values.yaml
+├── docs/
+│   ├── index.yaml
+│   └── *.tgz
+├── LISENCE
+└── README.md
 ```
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## 🆘 Support
+
+If you encounter any issues or need support, please file an issue on the GitHub repository.
+
+## 📄 License
+
+This project is licensed under the GNU GENERAL PUBLIC LICENSE v3.0 - see the [LICENSE](LICENSE) file for details.
