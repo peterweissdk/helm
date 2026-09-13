@@ -69,9 +69,11 @@ spec:
       nodeSelector:
         {{- toYaml . | nindent 8 }}
       {{- end }}
-      {{- with .Values.affinity }}
+      {{- if .Values.affinity.podAntiAffinity.enabled }}
       affinity:
-        {{- toYaml . | nindent 8 }}
+        podAntiAffinity:
+          preferredDuringSchedulingIgnoredDuringExecution:
+            {{- toYaml .Values.affinity.podAntiAffinity.preferredDuringSchedulingIgnoredDuringExecution | nindent 12 }}
       {{- end }}
       {{- with .Values.tolerations }}
       tolerations:

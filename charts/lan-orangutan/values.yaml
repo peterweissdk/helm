@@ -1,20 +1,28 @@
+# Number of pod replicas
 replicaCount: 1
 
+# Container image configuration
 image:
   repository: ghcr.io/291-group/lan-orangutan
   pullPolicy: IfNotPresent
   tag: ""
 
+# Secrets for pulling images from private registries
 imagePullSecrets: []
+# Override the chart name
 nameOverride: ""
+# Override the full resource name (ignores release name)
 fullnameOverride: ""
 
+# Use the host's network namespace
 hostNetwork: true
 
+# Environment variables passed to the container
 env:
   ORANGUTAN_PORT: "291"
   TZ: "UTC"
 
+# Container security context
 securityContext:
   capabilities:
     add:
@@ -22,23 +30,28 @@ securityContext:
       - NET_ADMIN
       - NET_BIND_SERVICE
 
+# Service configuration
 service:
   enabled: true
   type: ClusterIP
   port: 291
   targetPort: 291
 
+# Persistence configuration
+# Set enabled=true and hostPath.enabled=false to use PVC
+# Set hostPath.enabled=true to use hostPath volume
 persistence:
-  enabled: false
+  enabled: true
   storageClass: ""
   accessMode: ReadWriteOnce
   size: 1Gi
   existingClaim: ""
   hostPath:
-    enabled: true
+    enabled: false
     path: /var/lib/lan-orangutan
     type: DirectoryOrCreate
 
+# Liveness probe - restarts container if it fails
 livenessProbe:
   enabled: true
   httpGet:
@@ -49,6 +62,7 @@ livenessProbe:
   timeoutSeconds: 3
   failureThreshold: 3
 
+# Readiness probe - removes pod from service if it fails
 readinessProbe:
   enabled: false
   httpGet:
@@ -59,10 +73,30 @@ readinessProbe:
   timeoutSeconds: 3
   failureThreshold: 3
 
-resources: {}
+# Container resource requests and limits
+resources:
+  requests:
+    cpu: 10m
+    memory: 32Mi
+  limits:
+    cpu: 100m
+    memory: 64Mi
 
+# Node labels for pod assignment
 nodeSelector: {}
 
+# Tolerations for pod scheduling
 tolerations: []
 
-affinity: {}
+# Affinity rules for pod scheduling
+# podAntiAffinity prefers scheduling pods on different nodes
+affinity:
+  podAntiAffinity:
+    enabled: false
+    preferredDuringSchedulingIgnoredDuringExecution:
+      - weight: 100
+        podAffinityTerm:
+          labelSelector:
+            matchLabels:
+              app.kubernetes.io/name: lan-orangutan
+          topologyKey: kubernetes.io/hostname
