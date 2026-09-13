@@ -11,7 +11,7 @@
 #
 repositoryID: 21c1c715-6ff8-4211-b422-f669b49ba53a
 owners: # (optional, used to claim repository ownership)
-  - name: Peter Weiss
+  - name: peterweissdk
     email: peterweissdk@gmail.com
 #  - name: user2
 #    email: user2@email.com
