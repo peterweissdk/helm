@@ -1,25 +1,68 @@
 apiVersion: v1
 entries:
   gateway-api-crds:
-  - apiVersion: v2
+  - annotations:
+      artifacthub.io/license: GPL-3.0
+      artifacthub.io/links: |
+        - name: Chart Source
+          url: https://github.com/peterweissdk/helm/tree/main/charts/gateway-api-crds
+        - name: Gateway API Documentation
+          url: https://gateway-api.sigs.k8s.io/
+    apiVersion: v2
     appVersion: 1.5.1
-    created: "2026-09-13T15:41:50.018278489+02:00"
-    description: A Helm chart to manage Kubernetes Gateway API CRDs
-    digest: 1a9a43c8951981deb427fd41f0804578a52aec473b69cbdb8da4f28183fc96cd
+    created: "2026-09-13T21:31:16.165104463+02:00"
+    description: A Helm chart to install and manage Kubernetes Gateway API Custom
+      Resource Definitions (CRDs)
+    digest: f65f9b8f48baca31f4951a92e7e8b5037edc7171612301b28c1e6ba119d5c511
+    home: https://gateway-api.sigs.k8s.io/
+    icon: https://gateway-api.sigs.k8s.io/images/logo/logo-text-horizontal.png
+    keywords:
+    - gateway-api
+    - crds
+    - kubernetes
+    - ingress
+    - networking
+    maintainers:
+    - email: peterweissdk@gmail.com
+      name: peterweissdk
     name: gateway-api-crds
+    sources:
+    - https://github.com/kubernetes-sigs/gateway-api
+    - https://github.com/peterweissdk/helm
     type: application
     urls:
     - https://peterweissdk.github.io/helm/gateway-api-crds-1.5.1.tgz
     version: 1.5.1
   lan-orangutan:
-  - apiVersion: v2
+  - annotations:
+      artifacthub.io/license: GPL-3.0
+      artifacthub.io/links: |
+        - name: Chart Source
+          url: https://github.com/peterweissdk/helm/tree/main/charts/lan-orangutan
+        - name: Upstream Project
+          url: https://github.com/291-group/lan-orangutan
+    apiVersion: v2
     appVersion: 3.3.8
-    created: "2026-09-13T15:41:50.018743001+02:00"
-    description: A Helm chart for lan-orangutan network tool
-    digest: 4fcb347e89ae11188dd705c034f8bd97d43bcc7ab579f14129e9861afb4a238e
+    created: "2026-09-13T21:31:16.165707904+02:00"
+    description: A Helm chart for deploying LAN Orangutan - a network monitoring and
+      management tool for local networks
+    digest: 9fe8c1eb44303716aecfb3b0d4f245b843c1bfe4acd5393af46bd2ecbfff1c7e
+    home: https://github.com/291-group/lan-orangutan
+    icon: https://raw.githubusercontent.com/RubxKube/charts/main/img/lan-orangutan-logo.png
+    keywords:
+    - network
+    - monitoring
+    - lan
+    - orangutan
+    maintainers:
+    - email: peterweissdk@gmail.com
+      name: peterweissdk
     name: lan-orangutan
+    sources:
+    - https://github.com/291-group/lan-orangutan
+    - https://github.com/peterweissdk/helm
     type: application
     urls:
     - https://peterweissdk.github.io/helm/lan-orangutan-0.1.0.tgz
     version: 0.1.0
-generated: "2026-09-13T15:41:50.014058693+02:00"
+generated: "2026-09-13T21:31:16.160673856+02:00"

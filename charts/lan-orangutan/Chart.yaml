@@ -1,6 +1,26 @@
 apiVersion: v2
 name: lan-orangutan
-description: A Helm chart for lan-orangutan network tool
+description: A Helm chart for deploying LAN Orangutan - a network monitoring and management tool for local networks
 type: application
 version: 0.1.0
 appVersion: 3.3.8
+icon: https://raw.githubusercontent.com/RubxKube/charts/main/img/lan-orangutan-logo.png
+home: https://github.com/291-group/lan-orangutan
+sources:
+  - https://github.com/291-group/lan-orangutan
+  - https://github.com/peterweissdk/helm
+keywords:
+  - network
+  - monitoring
+  - lan
+  - orangutan
+maintainers:
+  - name: peterweissdk
+    email: peterweissdk@gmail.com
+annotations:
+  artifacthub.io/license: GPL-3.0
+  artifacthub.io/links: |
+    - name: Chart Source
+      url: https://github.com/peterweissdk/helm/tree/main/charts/lan-orangutan
+    - name: Upstream Project
+      url: https://github.com/291-group/lan-orangutan

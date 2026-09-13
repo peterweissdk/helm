@@ -1,28 +1,33 @@
-# Number of pod replicas
+# -- Number of pod replicas
 replicaCount: 1
 
-# Container image configuration
+# -- Container image configuration
 image:
+  # -- Image repository
   repository: ghcr.io/291-group/lan-orangutan
+  # -- Image pull policy
   pullPolicy: IfNotPresent
+  # -- Image tag (defaults to appVersion)
   tag: ""
 
-# Secrets for pulling images from private registries
+# -- Secrets for pulling images from private registries
 imagePullSecrets: []
-# Override the chart name
+# -- Override the chart name
 nameOverride: ""
-# Override the full resource name (ignores release name)
+# -- Override the full resource name (ignores release name)
 fullnameOverride: ""
 
-# Use the host's network namespace
+# -- Use the host's network namespace
 hostNetwork: true
 
-# Environment variables passed to the container
+# -- Environment variables passed to the container
 env:
+  # -- Port for the Orangutan service
   ORANGUTAN_PORT: "291"
+  # -- Timezone
   TZ: "UTC"
 
-# Container security context
+# -- Container security context with network capabilities
 securityContext:
   capabilities:
     add:
@@ -30,69 +35,105 @@ securityContext:
       - NET_ADMIN
       - NET_BIND_SERVICE
 
-# Service configuration
+# -- Service configuration
 service:
+  # -- Enable service creation
   enabled: true
+  # -- Service type
   type: ClusterIP
+  # -- Service port
   port: 291
+  # -- Container target port
   targetPort: 291
 
-# Persistence configuration
-# Set enabled=true and hostPath.enabled=false to use PVC
-# Set hostPath.enabled=true to use hostPath volume
+# -- Persistence configuration
+# @default -- See values.yaml
 persistence:
+  # -- Enable persistence (uses PVC when hostPath.enabled=false)
   enabled: true
+  # -- Custom PVC name (defaults to fullname)
   name: ""
+  # -- Storage class for PVC
   storageClass: ""
+  # -- Access mode for PVC
   accessMode: ReadWriteOnce
+  # -- Size of PVC
   size: 1Gi
+  # -- Use existing PVC instead of creating one
   existingClaim: ""
+  # -- hostPath volume configuration
   hostPath:
+    # -- Use hostPath instead of PVC
     enabled: false
+    # -- Path on the host
     path: /var/lib/lan-orangutan
+    # -- hostPath type
     type: DirectoryOrCreate
 
-# Liveness probe - restarts container if it fails
+# -- Liveness probe configuration (restarts container if it fails)
+# @default -- See values.yaml
 livenessProbe:
+  # -- Enable liveness probe
   enabled: true
   httpGet:
+    # -- Path for HTTP probe
     path: /static/orangutan.svg
+    # -- Port for HTTP probe
     port: 291
+  # -- Initial delay before probe starts
   initialDelaySeconds: 5
+  # -- How often to perform the probe
   periodSeconds: 30
+  # -- Probe timeout
   timeoutSeconds: 3
+  # -- Number of failures before restart
   failureThreshold: 3
 
-# Readiness probe - removes pod from service if it fails
+# -- Readiness probe configuration (removes pod from service if it fails)
+# @default -- See values.yaml
 readinessProbe:
+  # -- Enable readiness probe
   enabled: false
   httpGet:
+    # -- Path for HTTP probe
     path: /static/orangutan.svg
+    # -- Port for HTTP probe
     port: 291
+  # -- Initial delay before probe starts
   initialDelaySeconds: 5
+  # -- How often to perform the probe
   periodSeconds: 10
+  # -- Probe timeout
   timeoutSeconds: 3
+  # -- Number of failures before marking unready
   failureThreshold: 3
 
-# Container resource requests and limits
+# -- Container resource requests and limits
+# @default -- See values.yaml
 resources:
   requests:
+    # -- CPU request
     cpu: 10m
+    # -- Memory request
     memory: 32Mi
   limits:
+    # -- CPU limit
     cpu: 100m
+    # -- Memory limit
     memory: 64Mi
 
-# Node labels for pod assignment
+# -- Node labels for pod assignment
 nodeSelector: {}
 
-# Tolerations for pod scheduling
+# -- Tolerations for pod scheduling
 tolerations: []
 
-# Affinity rules for pod scheduling
-# podAntiAffinity prefers scheduling pods on different nodes
+# -- Affinity rules for pod scheduling
+# @default -- See values.yaml
 affinity:
+  # -- Pod anti-affinity configuration (prefers scheduling pods on different nodes)
   podAntiAffinity:
+    # -- Enable pod anti-affinity
     enabled: false
     preferredDuringSchedulingIgnoredDuringExecution:
       - weight: 100

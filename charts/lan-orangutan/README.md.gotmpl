@@ -1,0 +1,81 @@
+{{ template "chart.header" . }}
+
+{{ template "chart.badgesSection" . }}
+
+{{ template "chart.description" . }}
+
+{{ template "chart.homepageLine" . }}
+
+{{ template "chart.sourcesSection" . }}
+
+## 🚀 Quick Start
+
+```bash
+helm repo add peterweissdk https://peterweissdk.github.io/helm
+helm repo update
+helm install lan-orangutan peterweissdk/lan-orangutan
+```
+
+## ✨ Features
+
+- **Host Network Support** - Run with host network for direct LAN access
+- **Flexible Persistence** - Choose between PVC, hostPath, or emptyDir storage
+- **Security Capabilities** - Pre-configured with NET_RAW, NET_ADMIN, and NET_BIND_SERVICE
+- **Pod Anti-Affinity** - Optional scheduling rules to spread pods across nodes
+- **Health Probes** - Configurable liveness and readiness probes
+
+## 📦 Installing the Chart
+
+To install the chart with the release name `lan-orangutan`:
+
+```bash
+helm install lan-orangutan peterweissdk/lan-orangutan
+```
+
+To install with custom values:
+
+```bash
+helm install lan-orangutan peterweissdk/lan-orangutan -f values.yaml
+```
+
+## 🗑️ Uninstalling the Chart
+
+```bash
+helm uninstall lan-orangutan
+```
+
+## ⚙️ Configuration
+
+{{ template "chart.valuesSection" . }}
+
+### Persistence Options
+
+| Configuration | Description |
+|---------------|-------------|
+| `persistence.enabled=true` + `persistence.hostPath.enabled=false` | Use PVC with optional storageClass |
+| `persistence.hostPath.enabled=true` | Use hostPath volume |
+| Both disabled | Use emptyDir (data lost on pod restart) |
+
+### Example: Using PVC with StorageClass
+
+```yaml
+persistence:
+  enabled: true
+  name: "lan-orangutan-data"
+  storageClass: "local-path"
+  size: 5Gi
+  hostPath:
+    enabled: false
+```
+
+### Example: Using Existing PVC
+
+```yaml
+persistence:
+  enabled: true
+  existingClaim: "my-existing-pvc"
+  hostPath:
+    enabled: false
+```
+
+{{ template "chart.maintainersSection" . }}
