@@ -3,7 +3,14 @@
 [![Static Badge](https://img.shields.io/badge/Helm-Chart-white?style=flat&logo=helm&logoColor=white&logoSize=auto&labelColor=black)](https://helm.sh/)
 [![Static Badge](https://img.shields.io/badge/Kubernetes-Deployments-white?style=flat&logo=kubernetes&logoColor=white&logoSize=auto&labelColor=black)](https://kubernetes.io/)
 
-A Helm chart repository for Kubernetes resources, currently hosting the Gateway API CRDs chart.
+A Helm chart repository for Kubernetes resources.
+
+## 📦 Available Charts
+
+| Chart | Description | Version |
+|-------|-------------|---------|
+| `gateway-api-crds` | Kubernetes Gateway API CRDs | `1.5.1` |
+| `lan-orangutan` | LAN Orangutan network tool | `0.1.0` |
 
 ## 🚀 Quick Start
 
@@ -14,24 +21,16 @@ helm repo add peterweissdk https://peterweissdk.github.io/helm
 helm repo update
 ```
 
-Install the Gateway API CRDs:
+Install a chart:
 
 ```bash
-helm install gateway-api-crds peterweissdk/gateway-api-crds
+helm install <release-name> peterweissdk/<chart-name>
 ```
 
-## 🔧 Configuration
-
-### Gateway API CRDs
-
-| Parameter | Description | Default |
-|-----------|-------------|---------|
-| `appVersion` | Gateway API version | `1.5.1` |
-
-To customize the installation:
+To customize the installation, create a `values.yaml` file and apply it:
 
 ```bash
-helm install gateway-api-crds peterweissdk/gateway-api-crds -f values.yaml
+helm install <release-name> peterweissdk/<chart-name> -f values.yaml
 ```
 
 ## 📝 Directory Structure
@@ -39,15 +38,23 @@ helm install gateway-api-crds peterweissdk/gateway-api-crds -f values.yaml
 ```
 helm/
 ├── charts/
-│   └── gateway-api-crds/
+│   ├── gateway-api-crds/
+│   │   ├── Chart.yaml
+│   │   ├── templates/
+│   │   │   └── crds.yaml
+│   │   └── values.yaml
+│   └── lan-orangutan/
 │       ├── Chart.yaml
 │       ├── templates/
-│       │   └── crds.yaml
+│       │   ├── _helpers.tpl
+│       │   ├── deployment.yaml
+│       │   ├── pvc.yaml
+│       │   └── service.yaml
 │       └── values.yaml
 ├── docs/
 │   ├── index.yaml
 │   └── *.tgz
-├── LISENCE
+├── LICENSE
 └── README.md
 ```
 
