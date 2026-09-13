@@ -3,7 +3,7 @@ entries:
   gateway-api-crds:
   - apiVersion: v2
     appVersion: 1.5.1
-    created: "2026-09-13T13:32:19.025597098+02:00"
+    created: "2026-09-13T15:41:50.018278489+02:00"
     description: A Helm chart to manage Kubernetes Gateway API CRDs
     digest: 1a9a43c8951981deb427fd41f0804578a52aec473b69cbdb8da4f28183fc96cd
     name: gateway-api-crds
@@ -14,12 +14,12 @@ entries:
   lan-orangutan:
   - apiVersion: v2
     appVersion: 3.3.8
-    created: "2026-09-13T13:32:19.026497643+02:00"
+    created: "2026-09-13T15:41:50.018743001+02:00"
     description: A Helm chart for lan-orangutan network tool
-    digest: 58b09c8beb9841199980a12049542d5c86126b17561a60f0353f18ea3a5a18ba
+    digest: 4fcb347e89ae11188dd705c034f8bd97d43bcc7ab579f14129e9861afb4a238e
     name: lan-orangutan
     type: application
     urls:
     - https://peterweissdk.github.io/helm/lan-orangutan-0.1.0.tgz
     version: 0.1.0
-generated: "2026-09-13T13:32:19.019348737+02:00"
+generated: "2026-09-13T15:41:50.014058693+02:00"

@@ -42,6 +42,7 @@ service:
 # Set hostPath.enabled=true to use hostPath volume
 persistence:
   enabled: true
+  name: ""
   storageClass: ""
   accessMode: ReadWriteOnce
   size: 1Gi

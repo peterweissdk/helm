@@ -83,7 +83,7 @@ spec:
         - name: data
           {{- if and .Values.persistence.enabled (not .Values.persistence.hostPath.enabled) }}
           persistentVolumeClaim:
-            claimName: {{ .Values.persistence.existingClaim | default (include "lan-orangutan.fullname" .) }}
+            claimName: {{ .Values.persistence.existingClaim | default (.Values.persistence.name | default (include "lan-orangutan.fullname" .)) }}
           {{- else if .Values.persistence.hostPath.enabled }}
           hostPath:
             path: {{ .Values.persistence.hostPath.path }}
