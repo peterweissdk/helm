@@ -10,7 +10,7 @@ entries:
           url: https://gateway-api.sigs.k8s.io/
     apiVersion: v2
     appVersion: 1.5.1
-    created: "2026-09-14T21:13:15.408319822+02:00"
+    created: "2026-09-14T21:47:04.626608671+02:00"
     description: A Helm chart to install and manage Kubernetes Gateway API Custom
       Resource Definitions (CRDs)
     digest: f65f9b8f48baca31f4951a92e7e8b5037edc7171612301b28c1e6ba119d5c511
@@ -41,12 +41,15 @@ entries:
           url: https://github.com/peterweissdk/helm/tree/main/charts/lan-orangutan
         - name: Upstream Project
           url: https://github.com/291-group/lan-orangutan
+      artifacthub.io/signKey: |
+        fingerprint: DE87F96306A52EB766574CB285B6C2B54BCC7FF2
+        url: https://peterweissdk.github.io/helm/pubkey.asc
     apiVersion: v2
     appVersion: 3.3.8
-    created: "2026-09-14T21:13:15.409393922+02:00"
+    created: "2026-09-14T21:47:04.627478413+02:00"
     description: A Helm chart for deploying LAN Orangutan - a network monitoring and
       management tool for local networks
-    digest: 3d86f0084d8dba67632e7280f6289b3a65a040b15c266a7e78a1a60b9aa57ab7
+    digest: 0802ce46909860a41b3a700a3d6dcce08e0c463e95291430e9625faa923052f9
     home: https://github.com/291-group/lan-orangutan
     icon: https://raw.githubusercontent.com/peterweissdk/helm/main/img/lan-orangutan-logo.png
     keywords:
@@ -65,4 +68,4 @@ entries:
     urls:
     - https://peterweissdk.github.io/helm/lan-orangutan-0.1.0.tgz
     version: 0.1.0
-generated: "2026-09-14T21:13:15.401473983+02:00"
+generated: "2026-09-14T21:47:04.618430875+02:00"

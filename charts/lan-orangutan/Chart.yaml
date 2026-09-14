@@ -19,6 +19,9 @@ maintainers:
     email: peterweissdk@gmail.com
 annotations:
   artifacthub.io/license: GPL-3.0
+  artifacthub.io/signKey: |
+    fingerprint: DE87F96306A52EB766574CB285B6C2B54BCC7FF2
+    url: https://peterweissdk.github.io/helm/pubkey.asc
   artifacthub.io/links: |
     - name: Chart Source
       url: https://github.com/peterweissdk/helm/tree/main/charts/lan-orangutan
