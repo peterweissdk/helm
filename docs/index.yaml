@@ -10,7 +10,7 @@ entries:
           url: https://gateway-api.sigs.k8s.io/
     apiVersion: v2
     appVersion: 1.5.1
-    created: "2026-09-13T21:31:16.165104463+02:00"
+    created: "2026-09-14T21:13:15.408319822+02:00"
     description: A Helm chart to install and manage Kubernetes Gateway API Custom
       Resource Definitions (CRDs)
     digest: f65f9b8f48baca31f4951a92e7e8b5037edc7171612301b28c1e6ba119d5c511
@@ -43,12 +43,12 @@ entries:
           url: https://github.com/291-group/lan-orangutan
     apiVersion: v2
     appVersion: 3.3.8
-    created: "2026-09-13T21:31:16.165707904+02:00"
+    created: "2026-09-14T21:13:15.409393922+02:00"
     description: A Helm chart for deploying LAN Orangutan - a network monitoring and
       management tool for local networks
-    digest: 9fe8c1eb44303716aecfb3b0d4f245b843c1bfe4acd5393af46bd2ecbfff1c7e
+    digest: 3d86f0084d8dba67632e7280f6289b3a65a040b15c266a7e78a1a60b9aa57ab7
     home: https://github.com/291-group/lan-orangutan
-    icon: https://raw.githubusercontent.com/RubxKube/charts/main/img/lan-orangutan-logo.png
+    icon: https://raw.githubusercontent.com/peterweissdk/helm/main/img/lan-orangutan-logo.png
     keywords:
     - network
     - monitoring
@@ -65,4 +65,4 @@ entries:
     urls:
     - https://peterweissdk.github.io/helm/lan-orangutan-0.1.0.tgz
     version: 0.1.0
-generated: "2026-09-13T21:31:16.160673856+02:00"
+generated: "2026-09-14T21:13:15.401473983+02:00"

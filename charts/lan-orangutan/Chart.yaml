@@ -4,7 +4,7 @@ description: A Helm chart for deploying LAN Orangutan - a network monitoring and
 type: application
 version: 0.1.0
 appVersion: 3.3.8
-icon: https://raw.githubusercontent.com/RubxKube/charts/main/img/lan-orangutan-logo.png
+icon: https://raw.githubusercontent.com/peterweissdk/helm/main/img/lan-orangutan-logo.png
 home: https://github.com/291-group/lan-orangutan
 sources:
   - https://github.com/291-group/lan-orangutan
