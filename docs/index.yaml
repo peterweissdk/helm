@@ -8,14 +8,17 @@ entries:
           url: https://github.com/peterweissdk/helm/tree/main/charts/gateway-api-crds
         - name: Gateway API Documentation
           url: https://gateway-api.sigs.k8s.io/
+      artifacthub.io/signKey: |
+        fingerprint: DE87F96306A52EB766574CB285B6C2B54BCC7FF2
+        url: https://peterweissdk.github.io/helm/pubkey.asc
     apiVersion: v2
     appVersion: 1.5.1
-    created: "2026-09-14T21:47:04.626608671+02:00"
+    created: "2026-09-14T22:42:24.965278715+02:00"
     description: A Helm chart to install and manage Kubernetes Gateway API Custom
       Resource Definitions (CRDs)
-    digest: f65f9b8f48baca31f4951a92e7e8b5037edc7171612301b28c1e6ba119d5c511
+    digest: fa2250b34650cdc7c8495480f225056a43221050fb43815221af1df2e71d4671
     home: https://gateway-api.sigs.k8s.io/
-    icon: https://gateway-api.sigs.k8s.io/images/logo/logo-text-horizontal.png
+    icon: https://raw.githubusercontent.com/peterweissdk/helm/main/img/gatewayapi-logo.png
     keywords:
     - gateway-api
     - crds
@@ -46,7 +49,7 @@ entries:
         url: https://peterweissdk.github.io/helm/pubkey.asc
     apiVersion: v2
     appVersion: 3.3.8
-    created: "2026-09-14T21:47:04.627478413+02:00"
+    created: "2026-09-14T22:42:24.967243859+02:00"
     description: A Helm chart for deploying LAN Orangutan - a network monitoring and
       management tool for local networks
     digest: 0802ce46909860a41b3a700a3d6dcce08e0c463e95291430e9625faa923052f9
@@ -68,4 +71,4 @@ entries:
     urls:
     - https://peterweissdk.github.io/helm/lan-orangutan-0.1.0.tgz
     version: 0.1.0
-generated: "2026-09-14T21:47:04.618430875+02:00"
+generated: "2026-09-14T22:42:24.953984082+02:00"
