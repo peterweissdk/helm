@@ -1,6 +1,6 @@
 # gateway-api-crds
 
-![Version: 1.5.1](https://img.shields.io/badge/Version-1.5.1-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.5.1](https://img.shields.io/badge/AppVersion-1.5.1-informational?style=flat-square)
+![Version: 1.6.3](https://img.shields.io/badge/Version-1.6.3-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.6.3](https://img.shields.io/badge/AppVersion-1.6.3-informational?style=flat-square)
 
 A Helm chart to install and manage Kubernetes Gateway API Custom Resource Definitions (CRDs)
 
@@ -31,6 +31,19 @@ To install the chart with the release name `gateway-api-crds`:
 
 ```bash
 helm install gateway-api-crds peterweissdk/gateway-api-crds
+```
+
+### Available Versions
+
+| Chart Version | Gateway API Version |
+|---------------|---------------------|
+| `1.6.3` | v1.6.3 |
+| `1.5.1` | v1.5.1 |
+
+To install a specific version:
+
+```bash
+helm install gateway-api-crds peterweissdk/gateway-api-crds --version 1.5.1
 ```
 
 ## 🗑️ Uninstalling the Chart

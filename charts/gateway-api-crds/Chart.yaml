@@ -2,8 +2,8 @@ apiVersion: v2
 name: gateway-api-crds
 description: A Helm chart to install and manage Kubernetes Gateway API Custom Resource Definitions (CRDs)
 type: application
-version: 1.5.1
-appVersion: 1.5.1
+version: 1.6.3
+appVersion: 1.6.3
 icon: https://raw.githubusercontent.com/peterweissdk/helm/main/img/gatewayapi-logo.png
 home: https://gateway-api.sigs.k8s.io/
 sources:
