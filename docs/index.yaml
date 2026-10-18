@@ -12,8 +12,43 @@ entries:
         fingerprint: DE87F96306A52EB766574CB285B6C2B54BCC7FF2
         url: https://peterweissdk.github.io/helm/pubkey.asc
     apiVersion: v2
+    appVersion: 1.6.3
+    created: "2026-10-18T17:36:58.194156725+02:00"
+    description: A Helm chart to install and manage Kubernetes Gateway API Custom
+      Resource Definitions (CRDs)
+    digest: cfa75b705f8e8d5e448841264197ff3f729785a64ce721b820e7b8a01b8bba9d
+    home: https://gateway-api.sigs.k8s.io/
+    icon: https://raw.githubusercontent.com/peterweissdk/helm/main/img/gatewayapi-logo.png
+    keywords:
+    - gateway-api
+    - crds
+    - kubernetes
+    - ingress
+    - networking
+    maintainers:
+    - email: peterweissdk@gmail.com
+      name: peterweissdk
+    name: gateway-api-crds
+    sources:
+    - https://github.com/kubernetes-sigs/gateway-api
+    - https://github.com/peterweissdk/helm
+    type: application
+    urls:
+    - https://peterweissdk.github.io/helm/gateway-api-crds-1.6.3.tgz
+    version: 1.6.3
+  - annotations:
+      artifacthub.io/license: GPL-3.0
+      artifacthub.io/links: |
+        - name: Chart Source
+          url: https://github.com/peterweissdk/helm/tree/main/charts/gateway-api-crds
+        - name: Gateway API Documentation
+          url: https://gateway-api.sigs.k8s.io/
+      artifacthub.io/signKey: |
+        fingerprint: DE87F96306A52EB766574CB285B6C2B54BCC7FF2
+        url: https://peterweissdk.github.io/helm/pubkey.asc
+    apiVersion: v2
     appVersion: 1.5.1
-    created: "2026-09-14T22:42:24.965278715+02:00"
+    created: "2026-10-18T17:36:58.181844345+02:00"
     description: A Helm chart to install and manage Kubernetes Gateway API Custom
       Resource Definitions (CRDs)
     digest: fa2250b34650cdc7c8495480f225056a43221050fb43815221af1df2e71d4671
@@ -49,7 +84,7 @@ entries:
         url: https://peterweissdk.github.io/helm/pubkey.asc
     apiVersion: v2
     appVersion: 3.3.8
-    created: "2026-09-14T22:42:24.967243859+02:00"
+    created: "2026-10-18T17:36:58.195000696+02:00"
     description: A Helm chart for deploying LAN Orangutan - a network monitoring and
       management tool for local networks
     digest: 0802ce46909860a41b3a700a3d6dcce08e0c463e95291430e9625faa923052f9
@@ -71,4 +106,4 @@ entries:
     urls:
     - https://peterweissdk.github.io/helm/lan-orangutan-0.1.0.tgz
     version: 0.1.0
-generated: "2026-09-14T22:42:24.953984082+02:00"
+generated: "2026-10-18T17:36:58.174238759+02:00"

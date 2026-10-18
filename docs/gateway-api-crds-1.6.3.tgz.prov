@@ -1,0 +1,46 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+annotations:
+  artifacthub.io/license: GPL-3.0
+  artifacthub.io/links: |
+    - name: Chart Source
+      url: https://github.com/peterweissdk/helm/tree/main/charts/gateway-api-crds
+    - name: Gateway API Documentation
+      url: https://gateway-api.sigs.k8s.io/
+  artifacthub.io/signKey: |
+    fingerprint: DE87F96306A52EB766574CB285B6C2B54BCC7FF2
+    url: https://peterweissdk.github.io/helm/pubkey.asc
+apiVersion: v2
+appVersion: 1.6.3
+description: A Helm chart to install and manage Kubernetes Gateway API Custom Resource
+  Definitions (CRDs)
+home: https://gateway-api.sigs.k8s.io/
+icon: https://raw.githubusercontent.com/peterweissdk/helm/main/img/gatewayapi-logo.png
+keywords:
+- - gateway-api
+- - crds
+- - kubernetes
+- - ingress
+- - networking
+maintainers:
+- - email: peterweissdk@gmail.com
+  name: peterweissdk
+name: gateway-api-crds
+sources:
+- - https://github.com/kubernetes-sigs/gateway-api
+- - https://github.com/peterweissdk/helm
+type: application
+version: 1.6.3
+
+...
+files:
+  gateway-api-crds-1.6.3.tgz: sha256:cfa75b705f8e8d5e448841264197ff3f729785a64ce721b820e7b8a01b8bba9d
+
+-----BEGIN PGP SIGNATURE-----
+
+wrsEARYKAG0FgmrU55EJEIW2wrVLzH/yRRQAAAAAABwAIHNhbHRAbm90YXRpb25z
+Lm9wZW5wZ3Bqcy5vcmeAC8pcgsBJo6XNBcN/WnKqq7Ktf2rpF9JOwGJ0gDYynxYh
+BN6H+WMGpS63ZldMsoW2wrVLzH/yAAB9QgD/ZTH914nwWMh/uV14lBX+zOhzBr2b
+m4mXMrJbBCezUwAA/j5QYkZRP1vJtEHJho7Ybvzt7xu8ec5ucNQHm7sF6aIH
+-----END PGP SIGNATURE-----
