@@ -7,9 +7,9 @@ A Helm chart repository for Kubernetes resources.
 
 ## 📦 Available Charts
 
-| Chart | Description | Version |
-|-------|-------------|---------|
-| `gateway-api-crds` | Kubernetes Gateway API CRDs | `1.5.1` |
+| Chart | Description | Latest Version |
+|-------|-------------|----------------|
+| `gateway-api-crds` | Kubernetes Gateway API CRDs | `1.6.3` |
 | `lan-orangutan` | LAN Orangutan network tool | `0.1.0` |
 
 ## 🚀 Quick Start
