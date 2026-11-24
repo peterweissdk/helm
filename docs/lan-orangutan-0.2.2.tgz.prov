@@ -1,0 +1,45 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+annotations:
+  artifacthub.io/license: GPL-3.0
+  artifacthub.io/links: |
+    - name: Chart Source
+      url: https://github.com/peterweissdk/helm/tree/main/charts/lan-orangutan
+    - name: Upstream Project
+      url: https://github.com/291-group/lan-orangutan
+  artifacthub.io/signKey: |
+    fingerprint: DE87F96306A52EB766574CB285B6C2B54BCC7FF2
+    url: https://peterweissdk.github.io/helm/pubkey.asc
+apiVersion: v2
+appVersion: 4.0.0
+description: A Helm chart for deploying LAN Orangutan - a network monitoring and management
+  tool for local networks
+home: https://github.com/291-group/lan-orangutan
+icon: https://raw.githubusercontent.com/peterweissdk/helm/main/img/lan-orangutan-logo.png
+keywords:
+- - network
+- - monitoring
+- - lan
+- - orangutan
+maintainers:
+- - email: peterweissdk@gmail.com
+  name: peterweissdk
+name: lan-orangutan
+sources:
+- - https://github.com/291-group/lan-orangutan
+- - https://github.com/peterweissdk/helm
+type: application
+version: 0.2.2
+
+...
+files:
+  lan-orangutan-0.2.2.tgz: sha256:e50d0261bb67fc2fce93b4cd3c98b66f1cc18c116a9d1369f8244dc0554218aa
+
+-----BEGIN PGP SIGNATURE-----
+
+wrsEARYKAG0FgmsGAssJEIW2wrVLzH/yRRQAAAAAABwAIHNhbHRAbm90YXRpb25z
+Lm9wZW5wZ3Bqcy5vcmf5rl0Umb3vQn7ZspRpp9BNqKGgYxutwEiFcABPKFhA8xYh
+BN6H+WMGpS63ZldMsoW2wrVLzH/yAAAn7AEA2qtNmieqDeljWc9iYggs+gWgyDxZ
+1wg3tTPslu0cs4EA/RwmHWS/rUe+Fwpc/Ggs5aTZlvBm5NWTJKtBjk7fgCYA
+-----END PGP SIGNATURE-----

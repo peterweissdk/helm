@@ -8,6 +8,7 @@ spec:
   replicas: {{ .Values.replicaCount }}
   strategy:
     type: Recreate
+    rollingUpdate: null
   selector:
     matchLabels:
       {{- include "lan-orangutan.selectorLabels" . | nindent 6 }}
