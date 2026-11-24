@@ -2,7 +2,7 @@ apiVersion: v2
 name: lan-orangutan
 description: A Helm chart for deploying LAN Orangutan - a network monitoring and management tool for local networks
 type: application
-version: 0.2.0
+version: 0.2.1
 appVersion: 4.0.0
 icon: https://raw.githubusercontent.com/peterweissdk/helm/main/img/lan-orangutan-logo.png
 home: https://github.com/291-group/lan-orangutan
