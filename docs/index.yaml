@@ -13,7 +13,7 @@ entries:
         url: https://peterweissdk.github.io/helm/pubkey.asc
     apiVersion: v2
     appVersion: 1.6.3
-    created: "2026-11-24T22:34:03.694592833+01:00"
+    created: "2026-11-24T22:40:10.875203586+01:00"
     description: A Helm chart to install and manage Kubernetes Gateway API Custom
       Resource Definitions (CRDs)
     digest: cfa75b705f8e8d5e448841264197ff3f729785a64ce721b820e7b8a01b8bba9d
@@ -48,7 +48,7 @@ entries:
         url: https://peterweissdk.github.io/helm/pubkey.asc
     apiVersion: v2
     appVersion: 1.5.1
-    created: "2026-11-24T22:34:03.688130887+01:00"
+    created: "2026-11-24T22:40:10.869690015+01:00"
     description: A Helm chart to install and manage Kubernetes Gateway API Custom
       Resource Definitions (CRDs)
     digest: fa2250b34650cdc7c8495480f225056a43221050fb43815221af1df2e71d4671
@@ -84,7 +84,41 @@ entries:
         url: https://peterweissdk.github.io/helm/pubkey.asc
     apiVersion: v2
     appVersion: 4.0.0
-    created: "2026-11-24T22:34:03.6969027+01:00"
+    created: "2026-11-24T22:40:10.878778091+01:00"
+    description: A Helm chart for deploying LAN Orangutan - a network monitoring and
+      management tool for local networks
+    digest: 7666412645e33119d3b00e887406337f0257e986b70af2204e149a38a65f19f0
+    home: https://github.com/291-group/lan-orangutan
+    icon: https://raw.githubusercontent.com/peterweissdk/helm/main/img/lan-orangutan-logo.png
+    keywords:
+    - network
+    - monitoring
+    - lan
+    - orangutan
+    maintainers:
+    - email: peterweissdk@gmail.com
+      name: peterweissdk
+    name: lan-orangutan
+    sources:
+    - https://github.com/291-group/lan-orangutan
+    - https://github.com/peterweissdk/helm
+    type: application
+    urls:
+    - https://peterweissdk.github.io/helm/lan-orangutan-0.2.3.tgz
+    version: 0.2.3
+  - annotations:
+      artifacthub.io/license: GPL-3.0
+      artifacthub.io/links: |
+        - name: Chart Source
+          url: https://github.com/peterweissdk/helm/tree/main/charts/lan-orangutan
+        - name: Upstream Project
+          url: https://github.com/291-group/lan-orangutan
+      artifacthub.io/signKey: |
+        fingerprint: DE87F96306A52EB766574CB285B6C2B54BCC7FF2
+        url: https://peterweissdk.github.io/helm/pubkey.asc
+    apiVersion: v2
+    appVersion: 4.0.0
+    created: "2026-11-24T22:40:10.877955688+01:00"
     description: A Helm chart for deploying LAN Orangutan - a network monitoring and
       management tool for local networks
     digest: e50d0261bb67fc2fce93b4cd3c98b66f1cc18c116a9d1369f8244dc0554218aa
@@ -118,7 +152,7 @@ entries:
         url: https://peterweissdk.github.io/helm/pubkey.asc
     apiVersion: v2
     appVersion: 4.0.0
-    created: "2026-11-24T22:34:03.696432672+01:00"
+    created: "2026-11-24T22:40:10.877252611+01:00"
     description: A Helm chart for deploying LAN Orangutan - a network monitoring and
       management tool for local networks
     digest: ce37e4c515a2ebb7432c2c3707626f5057001977961f4e2f19149612779b02f7
@@ -152,7 +186,7 @@ entries:
         url: https://peterweissdk.github.io/helm/pubkey.asc
     apiVersion: v2
     appVersion: 4.0.0
-    created: "2026-11-24T22:34:03.695966711+01:00"
+    created: "2026-11-24T22:40:10.876571266+01:00"
     description: A Helm chart for deploying LAN Orangutan - a network monitoring and
       management tool for local networks
     digest: 84e13d69784c1bf3b8dc355a50d8825ff7ec4f9cc4c0a4b77647ff390e1de946
@@ -186,7 +220,7 @@ entries:
         url: https://peterweissdk.github.io/helm/pubkey.asc
     apiVersion: v2
     appVersion: 3.3.8
-    created: "2026-11-24T22:34:03.695441738+01:00"
+    created: "2026-11-24T22:40:10.875794279+01:00"
     description: A Helm chart for deploying LAN Orangutan - a network monitoring and
       management tool for local networks
     digest: 0802ce46909860a41b3a700a3d6dcce08e0c463e95291430e9625faa923052f9
@@ -208,4 +242,4 @@ entries:
     urls:
     - https://peterweissdk.github.io/helm/lan-orangutan-0.1.0.tgz
     version: 0.1.0
-generated: "2026-11-24T22:34:03.681910817+01:00"
+generated: "2026-11-24T22:40:10.862505728+01:00"
